@@ -1,0 +1,27 @@
+{
+  "name": "lostintranslation",
+  "version": "1.0.0",
+  "description": "lost in translation app",
+  "main": "index.js",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node-fetch": "^2.5.7",
+    "axios": "^0.19.2",
+    "node-fetch": "^2.6.1",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "chalk": "4.1.0",
+    "express": "4.17.1",
+    "open": "7.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "share": "lt --port 3000"
+  },
+  "author": "Elena Scobici"
+}
