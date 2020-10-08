@@ -19,16 +19,10 @@ async function Translate() {
         currentSourceLanguage = currentTargetLanguage;
     }
     const br = document.createElement("br");
-    if (runOnce) {
-        let textbox = document.getElementById("translatedTextTextbox");
-        textbox.remove();
-    }
-    else {
-        container.appendChild(br);
-        const translatedTextLabel = document.createElement('label');
-        translatedTextLabel.innerText = "Translated Text: ";
-        container.appendChild(translatedTextLabel);
-    }
+    container.appendChild(br);
+    const translatedTextLabel = document.createElement('label');
+    translatedTextLabel.innerText = "Translated Text: ";
+    container.appendChild(translatedTextLabel);
     const translatedTextTextbox = document.createElement('input');
     translatedTextTextbox.id = "translatedTextTextbox";
     let finishedTranslation = await SendRequest(currentTranslatedText, currentTargetLanguage, sourceLanguage);
@@ -76,5 +70,6 @@ function Reset() {
     const userInputTextbox = document.getElementById("userInput");
     userInputTextbox.value = "";
     userInputTextbox.focus();
+    targetLanguages = [];
 }
 //# sourceMappingURL=index.js.map

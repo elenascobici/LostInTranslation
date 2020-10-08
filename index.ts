@@ -29,17 +29,10 @@ async function Translate(){
         currentSourceLanguage = currentTargetLanguage;
     }    
     const br = document.createElement("br");
-
-    if (runOnce){
-        let textbox = document.getElementById("translatedTextTextbox") as HTMLInputElement;
-        textbox.remove();
-    }
-    else{
         container.appendChild(br);
         const translatedTextLabel = document.createElement('label') as HTMLLabelElement;
         translatedTextLabel.innerText = "Translated Text: ";
         container.appendChild(translatedTextLabel);
-    }
 
     const translatedTextTextbox = document.createElement('input') as HTMLInputElement;
     translatedTextTextbox.id = "translatedTextTextbox";
@@ -96,4 +89,5 @@ function Reset(){
     const userInputTextbox = document.getElementById("userInput") as HTMLSelectElement;
     userInputTextbox.value = "";
     userInputTextbox.focus();
+    targetLanguages = [];
 }
