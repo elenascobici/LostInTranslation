@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Lost in Translation</h1>
+        <label for="sourceLanguage">Select the source language:</label>
+        <select id="sourceLanguage">
+            <option id="en">English</option>
+            <option id="ar">Arabic</option>
+            <option id="zh">Chinese</option>
+            <option id="nl">Dutch</option>
+            <option id="fr">French</option>
+            <option id="fi">Finnish</option>
+            <option id="de">German</option>
+            <option id="he">Hebrew</option>
+            <option id="hi">Hindi</option>
+            <option id="it">Italian</option>
+            <option id="ga">Irish</option>
+            <option id="ja">Japanese</option>
+            <option id="jv">Javanese</option>
+            <option id="ko">Korean</option>
+            <option id="la">Latin</option>
+            <option id="fa">Persian</option>
+            <option id="pl">Polish</option>
+            <option id="pt">Portugese</option>
+            <option id="rm">Romanian</option>
+            <option id="ru">Russian</option>
+            <option id="es">Spanish</option>
+            <option id="sv">Swedish</option>
+            <option id="th">Thai</option>
+            <option id="tr">Turkish</option>
+            <option id="uk">Ukranian</option>
+            <option id="vi">Vietnamese</option>
+        </select>
+        <label for="targetLanguage">Select the target language:</label>
+        <select id="targetLanguage">
+            <option id="ar">Arabic</option>
+            <option id="zh">Chinese</option>
+            <option id="nl">Dutch</option>
+            <option id="en">English</option>
+            <option id="fr">French</option>
+            <option id="fi">Finnish</option>
+            <option id="de">German</option>
+            <option id="he">Hebrew</option>
+            <option id="hi">Hindi</option>
+            <option id="it">Italian</option>
+            <option id="ga">Irish</option>
+            <option id="ja">Japanese</option>
+            <option id="jv">Javanese</option>
+            <option id="ko">Korean</option>
+            <option id="la">Latin</option>
+            <option id="fa">Persian</option>
+            <option id="pl">Polish</option>
+            <option id="pt">Portugese</option>
+            <option id="rm">Romanian</option>
+            <option id="ru">Russian</option>
+            <option id="es">Spanish</option>
+            <option id="sv">Swedish</option>
+            <option id="th">Thai</option>
+            <option id="tr">Turkish</option>
+            <option id="uk">Ukranian</option>
+            <option id="vi">Vietnamese</option>
+        </select>
+        <button id="addLanguage" onclick="AddLanguage()">Add Language</button><br><br>
+        <label for="userInput">Input text:</label>
+        <input type="text" id="userInput">
+        <button id="translateButton" onclick="Translate()" disabled>Translate</button>
+        <button id="resetButton" onclick="Reset()" disabled>Reset</button>
+    </body>
+</html>
